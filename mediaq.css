@@ -1,0 +1,51 @@
+@media (max-width: 1400px) {
+  html {
+    /*εδώ βάζω το 10 με σκοπο το αλλο να έχει ευκολο πολαπλασσιο του rem*/
+    scroll-behavior: smooth;
+    font-size: 68%;
+    margin-left: 0%;
+    margin-right: 0%;
+    color: #322301;
+  }
+
+  .footer_text {
+    font-size: 2rem;
+    justify-self: center;
+    align-self: flex-end;
+    text-decoration: none;
+  }
+}
+
+@media (max-width: 1050px) {
+  html {
+    scroll-behavior: smooth;
+    font-size: 50%;
+    margin-left: 0%;
+    margin-right: 0%;
+    color: #322301;
+  }
+  .footer_text {
+    font-size: 2rem;
+    justify-self: center;
+    align-self: flex-end;
+    text-decoration: none;
+    transition: 0s;
+  }
+}
+
+@media (max-width: 600px) {
+  html {
+    /*εδώ βάζω το 10 με σκοπο το αλλο να έχει ευκολο πολαπλασσιο του rem*/
+    scroll-behavior: smooth;
+    font-size: 40%;
+    margin-left: 0%;
+    margin-right: 0%;
+  }
+  .footer_text {
+    font-size: 1rem;
+    justify-self: center;
+    align-self: flex-end;
+    text-decoration: none;
+    transition: 0s;
+  }
+}

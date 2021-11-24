@@ -1,0 +1,536 @@
+/*
+
+--- 01 TYPOGRAPHY SYSTEM
+
+- Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+- Font weights
+Default: 400
+Medium: 500
+Semi-bold: 600
+Bold: 700
+
+- Line heights
+Default: 1
+Small: 1.05
+Medium: 1.2
+Paragraph default: 1.6
+
+- Letter spacing
+-0.5px
+0.75px
+
+--- 02 COLORS
+
+- Primary: ##fab005
+- Tints:
+#fff9db
+#322301
+
+- Shades: 
+
+
+#f0ede6
+
+
+- Accents:
+- Greys
+
+#888
+#767676 (lightest grey allowed on #fff)
+#6f6f6f (lightest grey allowed on #fdf2e9)
+#555
+#333
+
+--- 05 SHADOWS
+
+0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+
+--- 06 BORDER-RADIUS
+
+Default: 9px
+Medium: 11px
+
+--- 07 WHITESPACE
+
+- Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+*/
+/*
+html {
+  /*εδώ βάζω το 10 με σκοπο το αλλο να έχει ευκολο πολαπλασσιο του rem
+  font-size: 90%;
+  margin-left: 0%;
+  margin-right: 0%;
+  color: #322301;
+}
+ */
+body {
+  background-color: #fff9db;
+  margin-bottom: 3rem;
+}
+
+.header_top {
+  font-family: "Fruktur", cursive;
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 0;
+}
+
+.hero_section {
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
+header {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.main_header {
+  font-size: 4.2rem;
+  margin-bottom: 0;
+}
+
+.project_header {
+  font-size: 3rem;
+  border: 0.1rem solid #fab005;
+  border-radius: 3rem;
+
+}
+
+.headers_and_mainphoto {
+  /*Αυτο το πεδίο αναφέρεται στο grid*/
+  display: grid;
+  grid-template-columns: auto ;
+  align-items: center;
+}
+
+.grid_with_6_pictures {
+  display: grid;
+  grid-template-columns: auto auto auto ;
+  grid-template-rows: auto auto auto auto;
+  justify-items: center;
+  align-items: flex-end;
+  margin-top: 15rem;
+}
+
+.main_photo {
+  width: 45rem;
+  height:28rem;
+  margin-top: 0rem;
+  border-radius: 20%;
+  align-self: flex-start;
+  justify-self: center;
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+
+.img_6 {
+  width: 25rem;
+  height: 16rem;
+  border-radius: 50%;
+
+}
+
+.titles_6 {
+  font-size: 2.5rem;
+  margin-bottom: 0.8%;
+}
+
+/*footer grid Arxh/////////////////////////////*/
+.footer_grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  align-self: center;
+  justify-self: center;
+  margin-top: 10rem;
+
+  }
+  .footer_sources{
+    justify-self: center;
+    align-self: flex-end;
+    color: #322301;
+  }
+
+
+  a.footer_my_cv:link {
+    background-color:#322301;  
+    padding: 4px 4px 4px 4px;  
+    border-radius: 20%;
+    box-shadow: 2px 2px 2px 2px rgb(109, 109, 109);
+    transition: 2s;
+    color: inherit;
+    color: #fff9db;
+   
+    
+  }
+  a.footer_my_cv:visited {
+    background-color:#322301;  
+    padding: 4px 4px 4px 4px;  
+    border-radius: 20%;
+    box-shadow: 2px 2px 2px 2px rgb(109, 109, 109);
+    transition: 2s;
+    color: inherit;
+    color: #fff9db;
+    
+  }
+
+  a.footer_my_cv:active {
+    background-color:#322301;  
+    padding: 4px 4px 4px 4px;  
+    border-radius: 20%;
+    box-shadow: 2px 2px 2px 2px rgb(109, 109, 109);
+    transition: 2s;
+    color: inherit;
+    color: #fff9db;
+   
+  }
+
+  a.footer_my_cv:hover {
+    background-color:#fff9db;  
+    padding: 4px 4px 4px 4px;  
+    border-radius: 20%;
+    box-shadow: 0.0px 0.0px 0.0px 0.0px rgb(109, 109, 109);
+    transition: 0.5s;
+    color: #322301;
+
+  }
+
+
+
+
+
+/*footer grid Telos/////////////////////////////*/
+/*//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*Katanga Lion Cord Start*/
+#katanga_title_cord {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+#katanga_img_cord {
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+
+#katanga_info_cord {
+  grid-column: 1/2;
+  grid-row: 3/4;
+}
+/*Katanga Lion Cord End*/
+
+/*Congo Lion Cord Start*/
+#congo_title_cord {
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+#congo_img_cord {
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+
+#congo_info_cord {
+  grid-column: 2/3;
+  grid-row: 3/4;
+}
+/*Congo Lion Cord End*/
+
+/*Transvaal Lion Cord Start*/
+#Transvaal_title_cord {
+  grid-column: 3/4;
+  grid-row: 1/2;
+}
+#Transvaal_img_cord {
+  grid-column: 3/4;
+  grid-row: 2/3;
+}
+
+#Transvaal_info_cord {
+  grid-column: 3/4;
+  grid-row: 3/4;
+}
+/*Transvaal Lion Cord End*/
+
+/*Congo Lion Cord End*/
+
+/*barbary Lion Cord Start*/
+#barbary_title_cord {
+  grid-column: 1/2;
+  grid-row: 3/4;
+}
+#barbary_img_cord {
+  grid-column: 1/2;
+  grid-row: 4/5;
+}
+
+#barbary_info_cord {
+  grid-column: 4/5;
+  grid-row: 3/4;
+}
+/*barbary Lion Cord End*/
+
+/*east_african Lion Cord Start*/
+#east_african_title_cord {
+  grid-column: 2/3;
+  grid-row: 3/4;
+}
+#east_african_img_cord {
+  grid-column: 2/3;
+  grid-row: 4/5;
+}
+
+#east_african_info_cord {
+  grid-column: 5/6;
+  grid-row: 3/4;
+}
+/*east_african Lion Cord End*/
+
+/*asiatic Lion Cord Start*/
+#asiatic_title_cord {
+  grid-column: 3/4;
+  grid-row: 3/4;
+}
+#asiatic_img_cord {
+  grid-column: 3/4;
+  grid-row: 4/5;
+}
+
+#asiatic_info_cord {
+  grid-column: 6/7;
+  grid-row: 3/4;
+}
+/*asiatic Lion Cord End*/
+/*//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+Katanga Analysis 1/6 Arxh 
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+.analysis_grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto AUTO AUTO auto auto; 
+  margin-top: 16rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
+.analysis_h1 {
+  font-size: 4.8rem;
+  text-align: center;
+  color: #322301;
+}
+
+.analysis_p {
+  font-size: 2.4rem; 
+  padding-right: 0%;
+
+}
+
+.analysis_list {
+  font-size: 20.8rem;
+  padding-left: 8rem;
+  font-weight: 700;
+  color: #322301;
+  margin-left: 10%;
+  list-style-type: none;
+  align-self: center;
+}
+
+.analysis_male_lion {
+  width: 40rem;
+  height: 30.5rem;
+  align-self: center;
+  justify-self: center;
+  border-radius: 20%;
+}
+.analysis_female_lion {
+  width: 40rem;
+  height: 30.5rem;
+  align-self: center;
+  justify-self: center;
+  border-radius: 20%;
+}
+
+.two_button hover{
+  margin-top: 3rem;
+  background-color: #fab005;
+  border-radius: 40%;
+  color: #322301;
+  width: 25rem;
+  height: 3.5rem;
+  font-size: 2.5rem;
+  text-align: center;
+  line-height: 2.5rem;
+ 
+  
+  
+
+}
+/*Katanga Analysis stixisi Arxh//////////////////s/////////////////////////////*/
+.analysis_h1 {
+  grid-column: 1/-1;
+}
+
+.analysis_p {
+  grid-row: 2/3;
+  grid-column: 1/-1;
+}
+
+.analysis_list {
+  grid-row: 3/4;
+  grid-column: 1/2;
+  justify-self: flex-start;
+}
+
+
+
+.analysis_male_lion {
+  grid-row: 3/4;
+  grid-column: 2/3;
+}
+.analysis_female_lion {
+  grid-row: 3/4;
+  grid-column: 1/2;
+}
+
+.internal_button{
+  grid-row: 4/5;
+  grid-column: 1/2;
+  justify-self: flex-end;
+  align-self: flex-start;
+ 
+  margin-right: 6%;
+}
+.external_button{
+  grid-row: 4/5;
+  grid-column: 2/3;
+  justify-self: flex-start;
+  margin-left: 6%;
+  align-self: flex-start;
+  
+}
+
+/*Katanga Analysis stixisi Telos///////////////////////////////////////////////*/
+
+
+/*anchor Properties START ////////////////////////////////////////////////////////////
+/* Styling links */
+
+/*////////////////Wiki Buttons Arxh/////////////////////////////////////////////////*/
+a.two_button:link {
+  margin-top: 3rem;
+  background-color: #fab005;
+  border-radius: 40%;
+  color: #322301;
+  width: 25rem;
+  height: 3.5rem;
+  font-size: 2.5rem;
+  text-align: center;
+  line-height: 2.5rem;
+  text-decoration: none;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  font-weight: 1000;
+  box-shadow: 2px 2px 2px 2px rgb(109, 109, 109);
+  transition: 0.5s;
+ 
+  
+
+}
+a.two_button:visited {
+  /* color: #777; */
+  margin-top: 3rem;
+  background-color: #fab005;
+  border-radius: 40%;
+  color: #322301;
+  width: 25rem;
+  height: 3.5rem;
+  font-size: 2.5rem;
+  text-align: center;
+  line-height: 2.5rem;
+  text-decoration: none;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  font-weight: 1000;
+  box-shadow: 2px 2px 2px 2px rgb(109, 109, 109);
+
+}
+
+a.two_button:hover {
+  margin-top: 3rem;
+  background-color: #fab005;
+  border-radius: 40%;
+  color: #322301;
+  width: 25rem;
+  height: 3.5rem;
+  font-size: 2.5rem;
+  text-align: center;
+  line-height: 2.5rem;
+  text-decoration: none;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  font-weight: 1000;
+  box-shadow: 0.4px 0.4px 0.4px 0.4px rgb(109, 109, 109);
+  
+
+}
+
+a.two_button:active {
+  margin-top: 3rem;
+  background-color: #fab005;
+  border-radius: 40%;
+  color: #322301;
+  width: 25rem;
+  height: 3.5rem;
+  font-size: 2.5rem;
+  text-align: center;
+  line-height: 2.5rem;
+  text-decoration: none;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  font-weight: 1000;
+  box-shadow: 2px 2px 2px 2px rgb(109, 109, 109);
+}
+/*////////////////Wiki Buttons Telos/////////////////////////////////////////////////*/
+
+/*////////////////6 images link Arxh/////////////////////////////////////////////////*/
+
+  a.pictures_link:link {
+
+    border-radius: 50%;
+    box-shadow: 4px 4px 4px 4px rgb(109, 109, 109);
+    transition: 0.3s;
+  }
+
+  a.pictures_link:hover{
+    border-radius: 50%;
+    box-shadow: 0.0px 0.0px 0.0px 0.0px rgb(109, 109, 109);
+    transition: 0.5s;
+    
+
+  }
+  
+  a.pictures_link:active{
+    border-radius: 50%;
+    box-shadow: 4px 4px 3px 3px rgb(109, 109, 109);
+  }
+
+  a.pictures_link:visited {
+    border-radius: 50%;
+    box-shadow: 4px 4px 3px 3px rgb(109, 109, 109);
+
+  }
+
+
+
+/*////////////////6 images link Telos/////////////////////////////////////////////////*/
+
+
+
+
+
+/*anchor Properties END ////////////////////////////////////////////////////////////
+
+

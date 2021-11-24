@@ -1,0 +1,225 @@
+/*
+
+--- 01 TYPOGRAPHY SYSTEM
+
+- Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+- Font weights
+Default: 400
+Medium: 500
+Semi-bold: 600
+Bold: 700
+
+- Line heights
+Default: 1
+Small: 1.05
+Medium: 1.2
+Paragraph default: 1.6
+
+- Letter spacing
+-0.5px
+0.75px
+
+--- 02 COLORS
+
+- Primary: ##fab005
+- Tints:
+#fff9db
+#644602
+
+- Shades: 
+
+
+#f0ede6
+
+
+- Accents:
+- Greys
+
+#888
+#767676 (lightest grey allowed on #fff)
+#6f6f6f (lightest grey allowed on #fdf2e9)
+#555
+#333
+
+--- 05 SHADOWS
+
+0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+
+--- 06 BORDER-RADIUS
+
+Default: 9px
+Medium: 11px
+
+--- 07 WHITESPACE
+
+- Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+*/
+
+html {
+  /*εδώ βάζω το 10 με σκοπο το αλλο να έχει ευκολο πολαπλασσιο του rem*/
+  font-size: 10px;
+  margin-left: 0%;
+  margin-right: 0%;
+}
+
+body {
+  background-color: #fff9db;
+}
+
+header {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.main_header {
+  font-size: 5.2rem;
+}
+
+.project_header {
+  font-size: 3rem;
+  border: 0.1rem solid #fab005;
+  border-radius: 3%;
+}
+
+.headers_and_mainphoto {
+  /*Αυτο το πεδίο αναφέρεται στο grid*/
+  display: grid;
+  grid-template-columns: 50% 50%;
+  align-items: center;
+  margin-bottom: 3%;
+}
+
+.grid_with_6_pictures {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto 1fr auto;
+  justify-items: center;
+  align-items: flex-end;
+}
+
+.main_photo {
+  width: 761px;
+  margin-top: 100px;
+  border-radius: 20%;
+}
+
+.img_6 {
+  width: 300px;
+  height: 200px;
+  border-radius: 50%;
+  box-shadow: 1% 1% 1% 1% #f0ede6;
+}
+
+.titles_6 {
+  font-size: 2.5rem;
+  margin-bottom: 0.8%;
+}
+
+.info_svg {
+  margin-top: 2.2%;
+  width: 20%;
+  stroke: #644602;
+}
+
+/*//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*Katanga Lion Cord Start*/
+#katanga_title_cord {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+#katanga_img_cord {
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+
+#katanga_info_cord {
+  grid-column: 1/2;
+  grid-row: 3/4;
+}
+/*Katanga Lion Cord End*/
+
+/*Congo Lion Cord Start*/
+#congo_title_cord {
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+#congo_img_cord {
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+
+#congo_info_cord {
+  grid-column: 2/3;
+  grid-row: 3/4;
+}
+/*Congo Lion Cord End*/
+
+/*Transvaal Lion Cord Start*/
+#Transvaal_title_cord {
+  grid-column: 3/4;
+  grid-row: 1/2;
+}
+#Transvaal_img_cord {
+  grid-column: 3/4;
+  grid-row: 2/3;
+}
+
+#Transvaal_info_cord {
+  grid-column: 3/4;
+  grid-row: 3/4;
+}
+/*Transvaal Lion Cord End*/
+
+/*Congo Lion Cord End*/
+
+/*barbary Lion Cord Start*/
+#barbary_title_cord {
+  grid-column: 4/5;
+  grid-row: 1/2;
+}
+#barbary_img_cord {
+  grid-column: 4/5;
+  grid-row: 2/3;
+}
+
+#barbary_info_cord {
+  grid-column: 4/5;
+  grid-row: 3/4;
+}
+/*barbary Lion Cord End*/
+
+/*east_african Lion Cord Start*/
+#east_african_title_cord {
+  grid-column: 5/6;
+  grid-row: 1/2;
+}
+#east_african_img_cord {
+  grid-column: 5/6;
+  grid-row: 2/3;
+}
+
+#east_african_info_cord {
+  grid-column: 5/6;
+  grid-row: 3/4;
+}
+/*east_african Lion Cord End*/
+
+/*asiatic Lion Cord Start*/
+#asiatic_title_cord {
+  grid-column: 6/7;
+  grid-row: 1/2;
+}
+#asiatic_img_cord {
+  grid-column: 6/7;
+  grid-row: 2/3;
+}
+
+#asiatic_info_cord {
+  grid-column: 6/7;
+  grid-row: 3/4;
+}
+/*asiatic Lion Cord End*/
+/*//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
